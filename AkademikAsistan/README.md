@@ -84,7 +84,37 @@ AkademikAsistan/
 
 ---
 
-## 🚀 Kurulum / Installation
+## 📥 Kurulum Gerektirmez — Direkt İndir / No Install Needed — Just Download
+
+> **TR:** Uygulamayı kullanmak için Visual Studio veya .NET kurmanıza **gerek yoktur**.
+>
+> 1. Sağ taraftaki **Releases** bölümüne gidin (veya [buraya tıklayın](../../releases/latest))
+> 2. En son sürümdeki `AkademikAsistan-vX.X.X-win-x64.zip` dosyasını indirin
+> 3. ZIP'i çıkartın → `AkademikAsistan.App.exe` dosyasına çift tıklayın
+> 4. ✅ Uygulama açılır — kurulum yok, kayıt yok, bağımlılık yok
+
+> **EN:** You do **not** need Visual Studio or .NET installed.
+>
+> 1. Go to **Releases** on the right (or [click here](../../releases/latest))
+> 2. Download `AkademikAsistan-vX.X.X-win-x64.zip` from the latest release
+> 3. Extract the ZIP → double-click `AkademikAsistan.App.exe`
+> 4. ✅ Done — no installer, no registration, no dependencies
+
+---
+
+## 🔖 Yeni Sürüm Yayınlama (Geliştirici) / Publishing a Release (Developers)
+
+GitHub Actions her `v*` etiketi push'unda otomatik `.exe` üretir ve Release'e yükler:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+# GitHub Actions çalışır → Release sayfasına .zip otomatik eklenir
+```
+
+---
+
+## 🚀 Geliştirici Kurulumu / Developer Setup
 
 ### Gereksinimler / Requirements
 - **Visual Studio 2022** (17.8+) — ".NET Desktop Development" iş yükü / workload
@@ -136,3 +166,14 @@ AkademikAsistan/
 Bu proje **MIT Lisansı** ile lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+---
+
+<div align="center">
+
+**🤖 Bu proje Claude (Anthropic) AI asistanı ile birlikte geliştirilmiştir.**
+**🤖 This project was developed in collaboration with Claude (Anthropic) AI assistant.**
+
+*Geliştirici / Developer: [Adın Soyadın / Your Name]*
+
+</div>
