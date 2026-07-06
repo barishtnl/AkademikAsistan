@@ -5,6 +5,9 @@ on:
     tags:
       - "v*"
 
+permissions:
+  contents: write
+
 jobs:
   build-and-release:
     runs-on: windows-latest
@@ -28,12 +31,13 @@ jobs:
             -p:PublishSingleFile=true `
             -p:IncludeNativeLibrariesForSelfExtract=true `
             -p:DebugType=none `
+            -p:TreatWarningsAsErrors=false `
             -o ./publish
 
       - name: Zip
+        shell: pwsh
         run: |
           Compress-Archive -Path "./publish/*" -DestinationPath "./AkademikAsistan-${{ github.ref_name }}.zip"
-        shell: pwsh
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
