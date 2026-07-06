@@ -47,10 +47,10 @@ namespace AkademikAsistan.App.ViewModels.GelisimTakibi
 
         public ObservableCollection<SemesterRecord> Records { get; }
 
-        private ISeries[] _gpaSeries;
+        private ISeries[] _gpaSeries = Array.Empty<ISeries>();
         public ISeries[] GpaSeries { get => _gpaSeries; private set => SetProperty(ref _gpaSeries, value); }
 
-        private Axis[] _xAxes;
+        private Axis[] _xAxes = Array.Empty<Axis>();
         public Axis[] XAxes { get => _xAxes; private set => SetProperty(ref _xAxes, value); }
 
         public Axis[] YAxes { get; }
