@@ -17,11 +17,11 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Restore
-        run: dotnet restore AkademikAsistan.sln
+        run: dotnet restore AkademikAsistan/AkademikAsistan.sln
 
       - name: Publish
         run: |
-          dotnet publish AkademikAsistan.App/AkademikAsistan.App.csproj `
+          dotnet publish AkademikAsistan/AkademikAsistan.App/AkademikAsistan.App.csproj `
             -c Release `
             -r win-x64 `
             --self-contained true `
