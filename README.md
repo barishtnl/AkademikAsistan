@@ -174,6 +174,5 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 **🤖 Bu proje Claude (Anthropic) AI asistanı ile birlikte geliştirilmiştir.**
 **🤖 This project was developed in collaboration with Claude (Anthropic) AI assistant.**
 
-*Geliştirici / Developer: [Adın Soyadın / Your Name]*
 
 </div>
